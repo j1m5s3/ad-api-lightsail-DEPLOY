@@ -1,0 +1,28 @@
+{
+  "web": {
+    "image": "ad-api-nginx/v1",
+    "command": [],
+    "ports": {
+      "80": "HTTP"
+    },
+    "environment": {
+      "NGINX_ENVSUBST_OUTPUT_DIR": "/etc/nginx",
+      "FLASK_HOST": "localhost",
+      "FLASK_PORT": "8000"
+    }
+  },
+  "ad-api": {
+    "image": "ad-api-flask/v1",
+    "command": [],
+    "ports": {
+      "8000": "HTTP"
+    }
+  },
+  "ad-db": {
+    "image": "ad-api-db/v1",
+    "command": [],
+    "ports": {
+      "8001": "HTTP"
+    }
+  }
+}
