@@ -1,6 +1,6 @@
 {
   "web": {
-    "image": "ad-api-nginx/v1",
+    "image": ":ad-api-container-service-1.ad-api-nginx.1",
     "command": [],
     "ports": {
       "80": "HTTP"
@@ -12,14 +12,14 @@
     }
   },
   "ad-api": {
-    "image": "ad-api-flask/v1",
+    "image": ":ad-api-container-service-1.ad-api-be.2",
     "command": [],
     "ports": {
       "8000": "HTTP"
     }
   },
   "ad-db": {
-    "image": "ad-api-db/v1",
+    "image": ":ad-api-container-service-1.ad-api-db.3",
     "command": [],
     "ports": {
       "8001": "HTTP"
