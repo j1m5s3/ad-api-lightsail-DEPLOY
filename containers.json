@@ -12,14 +12,14 @@
     }
   },
   "ad-api": {
-    "image": ":ad-api-container-service-1.ad-api-be.2",
+    "image": ":ad-api-container-service-1.ad-api-be.4",
     "command": [],
     "ports": {
       "8000": "HTTP"
     }
   },
   "ad-db": {
-    "image": ":ad-api-container-service-1.ad-api-db.3",
+    "image": ":ad-api-container-service-1.ad-api-db.5",
     "command": [],
     "ports": {
       "8001": "HTTP"
